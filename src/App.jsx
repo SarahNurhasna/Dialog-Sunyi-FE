@@ -1,13 +1,13 @@
 import React from 'react'
-import Navbar from './components/navbar'
+import Kelas from './pages/Kelas'
+import FAQ from './pages/FAQ'
 
 const App = () => {
   return (
     <div>
       <React.Fragment>
-        <Navbar/>
+        <FAQ/>
       </React.Fragment>
-
     </div>
   )
 }
