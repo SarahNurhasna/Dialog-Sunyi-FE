@@ -3,7 +3,13 @@ import Navbar from '../components/Navbar'
 
 const Kelas = () => {
   return (
-    <Navbar></Navbar>
+    <>
+      <Navbar/>
+      <section className="kelas">
+        
+      </section>
+    </>
+    
   )
 }
 
