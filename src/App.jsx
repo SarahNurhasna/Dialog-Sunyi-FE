@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import Kelas from './pages/Kelas'
 import FAQ from './pages/FAQ'
