@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import ReactHtmlParser from 'react-html-parser';
 
 const DetailArticle = () => {
   const [articleDetail, setArticleDetail] = useState(null);
@@ -51,7 +52,7 @@ const DetailArticle = () => {
               <p className="text-gray-600">{articleDetail.author}</p>
             </div>
           </div>
-          <div className="text-gray-700 text-justify text-xl font-normal">{articleDetail.content}</div>
+          <div className="text-gray-700 text-justify text-xl font-normal">{ReactHtmlParser(articleDetail.content)}</div>
         </div>
       </div>
     </div>
