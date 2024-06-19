@@ -23,7 +23,8 @@ const Artikel = () => {
                                 ARTIKEL
                             </h1>
                             <p className="ilg:text-lg text-DS-charcoal dark:text-white text-base md:text-sm">
-                                Tetap terhubung dengan dunia yang ber
+                                Tetap 
+                                <br /><br />terhubung dengan dunia yang ber
                                 <span className="text-DS-verdigris font-bold dark:text-DS-verdigris">dial</span>
                                 <span className="text-DS-orangecarrot font-bold dark:text-DS-orangecarrot">o</span>
                                 <span className="text-DS-verdigris font-bold dark:text-DS-verdigris">g </span>
@@ -37,7 +38,7 @@ const Artikel = () => {
                             </p>
                             <div>
                                 <div className="mt-4 gap-x-6 rounded-md">
-                                    <a href="#articles" className="inline-block rounded border border-DS-verdigris bg-DS-verdigris px-6 py-2 text-sm font-medium hover:font-semibold text-white hover:bg-DS-beige hover:scale-105 hover:transition-all hover:duration-300 hover:ease-in-out hover:text-DS-verdigris focus:outline-none focus:ring active:text-DS-verdigris">
+                                    <a href="#articles" className="inline-block rounded-xl border border-DS-verdigris bg-DS-verdigris px-6 py-2 text-sm font-medium hover:font-semibold text-white hover:bg-DS-beige hover:text-DS-verdigris focus:outline-none focus:ring active:text-DS-verdigris">
                                         Baca Sekarang
                                     </a>
                                 </div>
