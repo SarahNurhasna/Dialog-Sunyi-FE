@@ -8,7 +8,7 @@ const FAQ = () => {
     <>
       <Navbar />
 
-      <section className="px-16 md:px-9 m-auto bg-DS-beige">
+      <section className="px-16 md:px-9 2sm:px-5 m-auto bg-DS-beige">
         <div className=" text-center mt-24 py-10 sm:py-8">
           <h1 className="font-bold text-4xl sm:text-2xl text-DS-verdigris dark:text-DS-orangecarrot">Pertanyaan yang Sering Diajukan</h1>
           <h2 className="font-semibold text-2xl sm:text-lg p-2 dark:text-white">(Frequently Asked Question)</h2>
