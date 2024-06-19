@@ -20,10 +20,12 @@ module.exports = withMT({
           beige: "#FBF9F1",
           celeste: "#A1EEE9",
           verdigris: "#24B2B4",
+          "verdigris-700": "#18686D",
           orangecarrot: "#F0972E",
         },
       },
       screens: {
+        '2sm': { 'max': '400px'},
         'sm': { 'max': '640px' },
         'md': { 'max': '768px' },
         'lg': { 'max': '1024px' },

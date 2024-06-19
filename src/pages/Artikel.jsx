@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect } from 'react';
 import ArticleList from "../scripts/ArticleCard";
 import AOS from 'aos';
@@ -11,7 +12,7 @@ const Artikel = () => {
     return (
 
         <section className="section-article bg-DS-beige dark:bg-DS-charcoal">
-            <div className="containerr px-16 md:px-5 w-full max-w-7xl m-auto">
+            <div className="container px-16 md:px-5 w-full max-w-7xl m-auto">
                 <div className="hero-content flex flex-row justify-between py-16">
                     <div className="hero-left w-full mdx:hidden flex flex-auto ilg:w-1/2 ilg:flex-shrink-0 ilg:flex-grow-0 ilg:flex-auto justify-center">
                         <img src="/image/hero-artikel.svg" alt="hero" className="ilg:w-[360px] imdx:w-[300px]" data-aos="fade-right" />

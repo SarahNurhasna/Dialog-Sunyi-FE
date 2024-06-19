@@ -1,14 +1,9 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
-import Navbar from '../components/Navbar'
 
 const Kelas = () => {
   return (
-    <>
-      <Navbar/>
-      <section className="kelas">
-        
-      </section>
-    </>
+    <h1></h1>
     
   )
 }

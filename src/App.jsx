@@ -1,32 +1,38 @@
 /* eslint-disable no-unused-vars */
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Beranda from './pages/Beranda'
 import Kelas from './pages/Kelas'
+import Artikel from './pages/Artikel'
 import FAQ from './pages/FAQ'
 import TentangKami from './pages/TentangKami'
-import Artikel from './pages/Artikel'
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import DetailArticle from './pages/DetailArtikel';
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import DetailArticle from './pages/DetailArtikel'
 
 const App = () => {
   return (
+    
     <Router>
-      <Navbar />
-
+      <Navbar/>
       <div style={{ paddingTop: '90px'}}>
         <Routes>
-          <Route path='/FAQ' element={<FAQ />} />
-          <Route path='/' element={<Artikel />} />
-          <Route path='/detail-artikel/:id' element={<DetailArticle />} />
-          <Route path='/tentang-kami' element={<TentangKami />} />
-          <Route path='/kelas' element={<Kelas />} />
-        </Routes>
+        <Route path='/' element={<Beranda />}/>
+        <Route path='/kelas' element={<Kelas />}/>
+        <Route path='/artikel' element={<Artikel />}/>
+        <Route path='/detail-artikel/:id' element={<DetailArticle />} />
+        <Route path='/faq' element={<FAQ />}/>
+        <Route path='/tentang-kami' element={<TentangKami />}/>
+      </Routes>
       </div>
-
-      <Footer />
+      <Footer/>
     </Router>
-  );
+  )
 }
 
 export default App
+// <div>
+    //   <React.Fragment>
+    //     <FAQ/>
+    //   </React.Fragment>
+    // </div>
