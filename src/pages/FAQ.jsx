@@ -125,7 +125,7 @@ const FAQ = () => {
               Ya, ada beberapa kesalahan umum yang sering dilakukan oleh pemula saat menggunakan bahasa isyarat, seperti:
               </p>
               
-              <ul className="max-w-md space-y-1 text-gray-700 list-disc list-inside dark:text-white">
+              <ul className="space-y-1 text-gray-700 list-disc list-inside dark:text-white">
                   <li>
                     Penggunaan Tata Bahasa yang Salah
                   </li>
@@ -147,7 +147,7 @@ const FAQ = () => {
 
           <details className="group relative">
             <summary className="flex cursor-pointer items-center justify-between gap-1.5 bg-transparent p-4 text-DS-verdigris border-b-2 border-DS-verdigris group-open:border-b-0 dark:text-white dark:border-white">
-              <h2 className="font-semibold">Apakah ada kesalahan umum yang sering dilakukan dalam menggunakan bahasa isyarat?</h2>
+              <h2 className="font-semibold">Apa saja cara-cara efektif untuk belajar bahasa isyarat?</h2>
               <svg className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M19 9l-7 7-7-7" />
               </svg>
@@ -157,7 +157,7 @@ const FAQ = () => {
                 Terdapat berbagai cara yang efektif untuk belajar bahasa isyarat, tergantung pada preferensi dan gaya belajar individu. Berikut adalah beberapa cara yang bisa dipertimbangkan:
               </p>
               
-              <ul className="max-w-md space-y-1 text-gray-700 list-disc list-inside dark:text-white">
+              <ul className="space-y-1 text-gray-700 list-disc list-inside dark:text-white">
                   <li>
                     Mengikuti Kursus atau Kelas Formal
                   </li>
