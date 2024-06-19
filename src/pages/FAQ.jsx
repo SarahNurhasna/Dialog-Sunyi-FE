@@ -1,12 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 const FAQ = () => {
   return (
-    <>
-      <Navbar />
 
       <section className="faq">
         <section className="faq__header">
@@ -169,8 +165,6 @@ const FAQ = () => {
           </div>
         </section>
       </section>
-      <Footer />
-    </>
   );
 };
 

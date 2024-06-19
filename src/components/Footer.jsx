@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -8,9 +9,9 @@ const Footer = () => {
                 <div className="content-top flex justify-between flex-col ilg:flex-row">
                     <div className="content-top-left w-full flex-grow-0 flex-shrink-0 flex-auto ilg:w-1/3 ilg:flex-shrink-0 ilg:flex-grow-0 ilg:flex-auto mb-4 ilg:mb-0">
                         <div className="flex flex-col gap-4 ilg:gap-3">
-                            <a href="#" className="inline-flex md:max-w-48 max-w-64">
+                            <Link to="/" className="inline-flex md:max-w-48 max-w-64">
                                 <img className="logo" src="/image/foot-logo.svg" alt="Dialog Sunyi Logo" />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="content-top-right w-full flex-wrap flex-grow-0 flex-shrink-0 flex-auto ilg:w-7/12 ilg:flex-grow-0 ilg:flex-shrink-0 ilg:flex-auto lg:gap-8 gap-4 flex lg:flex-row ilg:flex-row justify-between">
@@ -21,7 +22,7 @@ const Footer = () => {
                                     <a href="#" className="text-white transition hover:text-DS-orangecarrot">Tentang Kami</a>
                                 </li>
                                 <li>
-                                    <a href="#" className="text-white transition hover:text-DS-orangecarrot">FAQ</a>
+                                    <Link to="/FAQ" className="text-white transition hover:text-DS-orangecarrot">FAQ</Link>
                                 </li>
                                 <li>
                                     <a href="#" className="text-white transition hover:text-DS-orangecarrot">Tim Kami</a>

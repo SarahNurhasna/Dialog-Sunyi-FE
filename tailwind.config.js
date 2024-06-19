@@ -34,6 +34,8 @@ module.exports = withMT({
         'ilg': { 'min': '1024px' },
         'ixl': { 'min': '1280px' },
         'i2xl': { 'min': '1536px'},
+        'mdx': { 'max': '767px' },
+        'imdx': { 'min': '767px' },
       },
 
     },
