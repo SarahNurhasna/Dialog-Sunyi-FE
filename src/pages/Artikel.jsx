@@ -23,8 +23,7 @@ const Artikel = () => {
                                 ARTIKEL
                             </h1>
                             <p className="ilg:text-lg text-DS-charcoal dark:text-white text-base md:text-sm">
-                                Tetap 
-                                <br /><br />terhubung dengan dunia yang ber
+                                Tetap terhubung dengan dunia yang ber
                                 <span className="text-DS-verdigris font-bold dark:text-DS-verdigris">dial</span>
                                 <span className="text-DS-orangecarrot font-bold dark:text-DS-orangecarrot">o</span>
                                 <span className="text-DS-verdigris font-bold dark:text-DS-verdigris">g </span>
