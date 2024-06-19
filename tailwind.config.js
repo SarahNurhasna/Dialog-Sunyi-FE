@@ -20,6 +20,7 @@ module.exports = withMT({
           beige: "#FBF9F1",
           celeste: "#A1EEE9",
           verdigris: "#24B2B4",
+          "verdigris-700": "#18686D",
           orangecarrot: "#F0972E",
         },
       },
