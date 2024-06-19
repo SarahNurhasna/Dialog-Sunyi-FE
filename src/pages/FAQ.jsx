@@ -146,7 +146,7 @@ const FAQ = () => {
           </details>
 
           <details className="group relative">
-            <summary className="flex cursor-pointer items-center justify-between gap-1.5 bg-transparent p-4 text-DS-verdigris border-b-2 border-DS-verdigris group-open:border-b-0 dark:text-white dark:border-white">
+            <summary className="flex cursor-pointer items-center justify-between gap-1.5 bg-transparent p-4 mb-16 text-DS-verdigris border-b-2 border-DS-verdigris group-open:border-b-0 dark:text-white dark:border-white">
               <h2 className="font-semibold">Apakah ada kesalahan umum yang sering dilakukan dalam menggunakan bahasa isyarat?</h2>
               <svg className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M19 9l-7 7-7-7" />
