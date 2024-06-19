@@ -8,14 +8,14 @@ const FAQ = () => {
     <>
       <Navbar />
 
-      <section className="px-16 md:px-9 2sm:px-5 m-auto bg-DS-beige">
+      <section className="px-16 md:px-9 2sm:px-5 m-auto bg-DS-beige dark:bg-DS-charcoal">
         <div className=" text-center mt-24 py-10 sm:py-8">
           <h1 className="font-bold text-4xl sm:text-2xl text-DS-verdigris dark:text-DS-orangecarrot">Pertanyaan yang Sering Diajukan</h1>
           <h2 className="font-semibold text-2xl sm:text-lg p-2 dark:text-white">(Frequently Asked Question)</h2>
           <hr className="w-48 sm:w-32 h-1 sm:h-0.5 mx-auto mb-5 bg-DS-verdigris border-0 rounded dark:text-DS-orangecarrot"></hr>
         </div>
 
-        <div className="space-y-4 text-lg md:text-base">
+        <div className="space-y-4 text-lg md:text-base mb-16">
           <details className="group relative">
             <summary className="flex cursor-pointer items-center justify-between gap-1.5 bg-transparent p-4 text-DS-verdigris border-b-2 border-DS-verdigris group-open:border-b-0 dark:text-white dark:border-white">
               <h2 className="font-semibold">Apa itu bahasa isyarat?</h2>
@@ -146,7 +146,7 @@ const FAQ = () => {
           </details>
 
           <details className="group relative">
-            <summary className="flex cursor-pointer items-center justify-between gap-1.5 bg-transparent p-4 mb-16 text-DS-verdigris border-b-2 border-DS-verdigris group-open:border-b-0 dark:text-white dark:border-white">
+            <summary className="flex cursor-pointer items-center justify-between gap-1.5 bg-transparent p-4 text-DS-verdigris border-b-2 border-DS-verdigris group-open:border-b-0 dark:text-white dark:border-white">
               <h2 className="font-semibold">Apakah ada kesalahan umum yang sering dilakukan dalam menggunakan bahasa isyarat?</h2>
               <svg className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M19 9l-7 7-7-7" />
