@@ -6,18 +6,26 @@ import Kelas from './pages/Kelas'
 import Artikel from './pages/Artikel'
 import FAQ from './pages/FAQ'
 import TentangKami from './pages/TentangKami'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import DetailArticle from './pages/DetailArtikel'
 
 const App = () => {
   return (
     
     <Router>
-      <Routes>
+      <Navbar/>
+      <div style={{ paddingTop: '90px'}}>
+        <Routes>
         <Route path='/' element={<Beranda />}/>
         <Route path='/kelas' element={<Kelas />}/>
         <Route path='/artikel' element={<Artikel />}/>
+        <Route path='/detail-artikel/:id' element={<DetailArticle />} />
         <Route path='/faq' element={<FAQ />}/>
         <Route path='/tentang-kami' element={<TentangKami />}/>
       </Routes>
+      </div>
+      <Footer/>
     </Router>
   )
 }
