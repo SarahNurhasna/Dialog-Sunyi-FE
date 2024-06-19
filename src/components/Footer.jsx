@@ -1,61 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-      <footer className="bg-DS-charcoal pt-24 pb-10">
-        <div className="containerr max-w-360 w-full px-16 md:px-9 m-auto">
-            <div className="content flex flex-col gap-10">
-                <div className="content-top flex justify-between flex-col ilg:flex-row">
-                    <div className="content-top-left w-full flex-grow-0 flex-shrink-0 flex-auto ilg:w-1/3 ilg:flex-shrink-0 ilg:flex-grow-0 ilg:flex-auto mb-4 ilg:mb-0">
-                        <div className="flex flex-col gap-4 ilg:gap-3">
-                            <Link to="/" className="inline-flex md:max-w-48 max-w-64">
-                                <img className="logo" src="/image/foot-logo.svg" alt="Dialog Sunyi Logo" />
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="content-top-right w-full flex-wrap flex-grow-0 flex-shrink-0 flex-auto ilg:w-7/12 ilg:flex-grow-0 ilg:flex-shrink-0 ilg:flex-auto lg:gap-8 gap-4 flex lg:flex-row ilg:flex-row justify-between">
-                        <div className="flex flex-col gap-5 lg:w-2/5 ilg:w-3/12">
-                            <p className="font-semibold text-xl text-white">Tentang</p>
-                            <ul className="flex flex-col gap-4 text-lg md:text-base">
-                                <li>
-                                    <a href="#" className="text-white transition hover:text-DS-orangecarrot">Tentang Kami</a>
-                                </li>
-                                <li>
-                                    <Link to="/FAQ" className="text-white transition hover:text-DS-orangecarrot">FAQ</Link>
-                                </li>
-                                <li>
-                                    <a href="#" className="text-white transition hover:text-DS-orangecarrot">Tim Kami</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="flex flex-col gap-5 lg:w-2/5 ilg:w-3/12">
-                            <p className="font-semibold text-xl text-white">Fitur</p>
-                            <ul className="flex flex-col gap-4 text-lg md:text-base">
-                                <li>
-                                    <a href="#" className="text-white transition hover:text-DS-orangecarrot">Kelas</a>
-                                </li>
-                                <li>
-                                    <a href="#" className="text-white transition hover:text-DS-orangecarrot">VISYARA</a>
-                                </li>
-                                <li>
-                                    <a href="#" className="text-white transition hover:text-DS-orangecarrot">Artikel</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="flex flex-col gap-5 text-center items-start ilg:items-center lg:w-full ilg:w-3/12">
-                            <p className="font-semibold text-xl text-white">Kontak Kami</p>
-                            <div className="flex flex-col gap-5 items-center sm:items-start">
-                                <ul className="flex flex-row gap-5">
-                                    <li>
-                                        <a
-                                        href="#"
-                                        rel="noreferrer"
-                                        target="_blank"
-                                        className="text-white transition hover:text-DS-orangecarrot"
-                                        >
-                                        <span className="sr-only">GitHub</span>
     <footer className="bg-DS-charcoal pt-24 pb-10">
       <div className="containerr max-w-360 w-full px-16 md:px-9 m-auto">
         <div className="content flex flex-col gap-10">
