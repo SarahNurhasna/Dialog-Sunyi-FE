@@ -45,11 +45,10 @@ const Kelas = () => {
             <h1>Daftar Kelas</h1>
           </div>
           <div className="border-t-4 w-32 mx-auto my-6 md:w-36 md:h-1 border-DS-verdigris" data-aos="fade-up" data-aos-delay="300"></div>
+          <article id="kelas-list" className="content-bottom " data-aos="fade-up" data-aos-delay="600">
+            <KelasList />
+          </article>
         </div>
-
-        <article id="kelas-list" className="content-bottom " data-aos="fade-up" data-aos-delay="600">
-          <KelasList />
-        </article>
       </div>
     </div>
   );
