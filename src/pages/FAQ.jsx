@@ -1,7 +1,13 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const FAQ = () => {
+  useEffect(() => {
+    AOS.init(); 
+  }, []);
+
   return (
     <section className="px-16 md:px-9 2sm:px-5 m-auto bg-DS-beige dark:bg-DS-charcoal-950">
       <div data-aos="fade-up" className=" text-center py-10 sm:py-8">
