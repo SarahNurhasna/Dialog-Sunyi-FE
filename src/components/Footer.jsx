@@ -44,11 +44,6 @@ const Footer = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="/visyara" className="text-white transition hover:text-DS-orangecarrot">
-                      VISYARA
-                    </a>
-                  </li>
-                  <li>
                     <a href="/artikel" className="text-white transition hover:text-DS-orangecarrot">
                       Artikel
                     </a>
