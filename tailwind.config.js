@@ -17,6 +17,8 @@ module.exports = withMT({
         DS: {
           charcoal: "#2D3E4A",
           "charcoal-950": "#1B2831",
+          "charcoal-700": "#365668",
+          "charcoal-8800": "#334A57",
           davysgray: "#5F5957",
           beige: "#FBF9F1",
           "beige-100": "#F9F7ED",

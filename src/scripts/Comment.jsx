@@ -69,20 +69,20 @@ const CommentSection = ({ articleId }) => {
       <h2 className="text-lg font-bold mb-4 text-DS-charcoal dark:text-DS-beige">Kirimkan Komentar</h2>
       <div className="flex flex-col space-y-4">
         {comments.map((comment) => (
-          <div key={comment._id} className="bg-DS-beige dark:bg-DS-charcoal text-DS-charcoal dark:text-DS-beige p-4 rounded-lg shadow-md">
+          <div key={comment._id} className="bg-DS-beige dark:bg-DS-charcoal-700 text-DS-charcoal dark:text-DS-beige p-4 rounded-lg shadow-md">
             <h3 className="text-lg text-DS-charcoal dark:text-DS-beige font-bold">{comment.name}</h3>
-            <p className="text-DS-charcoal text-sm mb-2">Posted on {new Date(comment.date).toLocaleDateString()}</p>
-            <p className="text-DS-charcoal">{comment.comment}</p>
+            <p className="text-sm mb-2">Posted on {new Date(comment.date).toLocaleDateString()}</p>
+            <p className="">{comment.comment}</p>
           </div>
         ))}
-        <form className="bg-DS-beige dark:bg-DS-charcoal p-4 rounded-lg shadow-md" onSubmit={handleSubmit}>
+        <form className="bg-DS-beige dark:bg-DS-charcoal-700 p-4 rounded-lg shadow-md" onSubmit={handleSubmit}>
           <h3 className="text-lg font-bold mb-2 text-DS-charcoal dark:text-DS-beige">Tambah Komentar</h3>
           <div className="mb-4">
-            <label className="block text-gray-700 font-bold mb-2" htmlFor="name">
+            <label className="block text-gray-700 dark:text-DS-beige font-bold mb-2" htmlFor="name">
               Nama
             </label>
             <input
-              className="bg-DS-beige dark:bg-DS-charcoal shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="bg-DS-beige dark:bg-DS-charcoal shadow appearance-none border dark:border-DS-beige-100 rounded w-full py-2 px-3 text-gray-700 dark:text-DS-beige-100 leading-tight focus:outline-none focus:shadow-outline"
               id="name"
               type="text"
               placeholder="Masukkan namamu"
@@ -92,11 +92,11 @@ const CommentSection = ({ articleId }) => {
           </div>
           <div className="flex flex-row justify-between space-x-4">
             <div className="comment flex-grow mb-4">
-              <label className="block text-gray-700 font-bold mb-2" htmlFor="comment">
+              <label className="block text-gray-700 dark:text-DS-beige font-bold mb-2" htmlFor="comment">
                 Komentar
               </label>
               <textarea
-                className="bg-DS-beige dark:bg-DS-charcoal shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="bg-DS-beige dark:bg-DS-charcoal shadow appearance-none border dark:border-DS-beige-100 rounded w-full py-2 px-3 text-gray-700 dark:text-DS-beige leading-tight focus:outline-none focus:shadow-outline"
                 id="comment"
                 rows="3"
                 placeholder="Tulis komentarmu"

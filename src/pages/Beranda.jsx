@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import bgWhy from '../../public/image/WHY.png'
+import bgWhy from '/image/WHY.png'
 import ArticleCarousel from "../scripts/ArticleCarousel";
 
 const Beranda = () => {
@@ -94,7 +94,7 @@ const Beranda = () => {
       </section>
 
       <section className="px-16 md:px-9 2sm:px-5 m-auto bg-DS-beige dark:bg-DS-charcoal-950">
-        <div className="content-top title text-center">
+        <div className="content-top title text-center mt-16">
           <div className="title-body text-DS-charcoal dark:text-DS-orangecarrot font-bold text-4xl md:text-2xl sm:text-2xl" data-aos="fade-up" data-aos-delay="300">
             <h1>Frequently Asked Questions</h1>
           </div>
