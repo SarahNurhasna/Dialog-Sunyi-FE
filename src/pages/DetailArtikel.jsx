@@ -50,7 +50,7 @@ const DetailArticle = () => {
         <div className="flex flex-col items-center gap-9 p-6 mb-8">
           <h1 className="text-5xl md:text-2xl xl:text-3xl font-bold mb-4 text-DS-charcoal dark:text-DS-beige">{articleDetail.name}</h1>
           <div className="flex flex-col items-start gap-5 xl:w-full">
-            <img src={articleDetail.image} className="w-[935px] max-h-[490px] object-cover rounded-lg md:max-h-48 xl:w-full" alt="artikel 1" />
+            <img src={articleDetail.image} className="w-[935px] max-h-[490px] object-cover rounded-lg md:max-h-48 xl:w-full" alt="artikel 1" loading="lazy"/>
             <div className="flex items-start gap-5 font-medium text-lg md:text-sm">
               <p className="text-DS-charcoal dark:text-DS-beige">{new Date(articleDetail.date).toLocaleDateString()}</p>
               <p className="text-DS-charcoal dark:text-DS-beige">{articleDetail.author}</p>

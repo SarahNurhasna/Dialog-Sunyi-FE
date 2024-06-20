@@ -13,7 +13,7 @@ const Beranda = () => {
   return (
     <div className="bg-DS-beige dark:bg-DS-charcoal-950">
       <section className="flex ilg:flex-row-reverse lg:flex-col justify-center items-center px-16 md:px-9 2sm:px-5 mt-[64px] lg:mt-12 2sm:mt-0 sm:mt-9 py-10 sm:py-8 gap-8">
-        <img data-aos="fade-left" data-aos-delay="300" className="object-cover max-w-fit h-72 lg:max-h-80 md:h-56 2sm:h-48" src="/image/hero-home.svg" alt="hero home" />
+        <img data-aos="fade-left" data-aos-delay="300" className="object-cover max-w-fit h-72 lg:max-h-80 md:h-56 2sm:h-48" src="/image/hero-home.svg" alt="hero home" loading="lazy" />
         <div className="flex flex-col justify-between p-4 2sm:py-0 leading-normal">
           <h1 data-aos="fade-down" data-aos-delay="300" className="mb-4 text-4xl sm:text-2xl font-extrabold sm:font-bold tracking-tight text-DS-charcoal dark:text-DS-orangecarrot">
             Dialog Tanpa Suara
@@ -50,28 +50,28 @@ const Beranda = () => {
         </div>
         <section className="why-reason flex flex-row 2lg:flex-col justify-center items-center px-16 md:px-9 2sm:px-5 pt-4 lg:py-5 gap-8 bg-ds">
           <div className="why-a flex flex-col justify-between items-center content-center p-2 leading-normal" data-aos="flip-left">
-            <img className="w-[170px] pb-4 flex self-center items-center" src="/image/why-a.svg" alt="why-a" />
+            <img className="w-[170px] pb-4 flex self-center items-center" src="/image/why-a.svg" alt="why-a" loading="lazy" />
             <p className="title font-bold text-base text-DS-beige text-center">Komunikasi Efektif Bagi Tuna Rungu</p>
             <p className="my-3 text-center sm:mt-0 font-normal text-sm sm:text-base 2sm:text-sm text-DS-beige">
               Bahasa isyarat memungkinkan orang tunarungu untuk berkomunikasi secara efektif, dan dapat membantu mereka dalam mengakses informasi, pendidikan, serta pekerjaan dengan lebih mudah.
             </p>
           </div>
           <div className="flex flex-col justify-between p-2 leading-normal" data-aos="flip-left">
-            <img className="w-[115px] pb-4 flex self-center items-center" src="/image/why-b.svg" alt="why-b" />
+            <img className="w-[115px] pb-4 flex self-center items-center" src="/image/why-b.svg" alt="why-b" loading="lazy" />
             <p className="title font-bold text-base text-DS-beige text-center">Pengembangan Bahasa dan Kognitif</p>
             <p className="my-3 text-center sm:mt-0 font-normal text-sm sm:text-base 2sm:text-sm text-DS-beige">
               Bahasa isyarat dapat meningkatkan keterampilan bahasa serta kemampuan berpikir abstrak dan logika karena melibatkan penggunaan gerakan tangan, ekspresi wajah, dan gerakan tubuh.
             </p>
           </div>
           <div className="flex flex-col justify-between p-2 leading-normal" data-aos="flip-right">
-            <img className="w-[130px] pb-4 flex self-center items-center" src="/image/why-c.svg" alt="why-c" />
+            <img className="w-[130px] pb-4 flex self-center items-center" src="/image/why-c.svg" alt="why-c" loading="lazy" />
             <p className="title font-bold text-base text-DS-beige text-center">Inklusi dan Empati Sosial</p>
             <p className="my-3 text-center sm:mt-0 font-normal text-sm sm:text-base 2sm:text-sm text-DS-beige">
               Penggunaan bahasa isyarat oleh orang yang mendengar membantu meningkatkan pemahaman dan empati serta mengurangi isolasi terhadap komunitas tunarungu dan mendorong inklusi sosial yang lebih besar.
             </p>
           </div>
           <div className="flex flex-col justify-between p-2 leading-normal" data-aos="flip-right">
-            <img className="w-[125px] pb-4 flex self-center items-center" src="/image/why-d.svg" alt="why-d" />
+            <img className="w-[125px] pb-4 flex self-center items-center" src="/image/why-d.svg" alt="why-d" loading="lazy" />
             <p className="title font-bold text-base text-DS-beige text-center">Penggunaan dalam Berbagai Profesi</p>
             <p className="my-3 text-center sm:mt-0 font-normal text-sm sm:text-base 2sm:text-sm text-DS-beige">
               Kemampuan bahasa isyarat menjadi semakin diminati di berbagai bidang, seperti pendidikan, kesehatan, dan layanan sosial. Menguasai bahasa isyarat dapat meningkatkan peluang Anda untuk mendapatkan pekerjaan di bidang-bidang
