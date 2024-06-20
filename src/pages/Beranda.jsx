@@ -12,11 +12,11 @@ const Beranda = () => {
   return (
     <div className=" bg-DS-beige dark:bg-DS-charcoal">
       <section className="flex ilg:flex-row-reverse lg:flex-col justify-center items-center px-16 md:px-9 2sm:px-5 mt-[90px] lg:mt-12 sm:mt-9 py-10 sm:py-8 gap-8">
-        <img className="object-cover max-w-fit h-72 lg:max-h-80 md:h-56 2sm:h-48" src="/image/hero-home.svg" alt="hero home" />
+        <img data-aos="fade-left" data-aos-delay="300" className="object-cover max-w-fit h-72 lg:max-h-80 md:h-56 2sm:h-48" src="/image/hero-home.svg" alt="hero home" />
         <div className="flex flex-col justify-between p-4 leading-normal">
-          <h1 className="mb-4 text-4xl sm:text-2xl font-extrabold sm:font-bold tracking-tight text-DS-charcoal dark:text-DS-orangecarrot">Dialog Tanpa Suara
+          <h1 data-aos="fade-down" data-aos-delay="300" className="mb-4 text-4xl sm:text-2xl font-extrabold sm:font-bold tracking-tight text-DS-charcoal dark:text-DS-orangecarrot">Dialog Tanpa Suara
           <br/>Komunikasi Tanpa Batas</h1>
-          <p className="my-3 sm:mt-0 font-normal text-lg sm:text-base tracking-wide text-DS-charcoal dark:text-DS-beige text-justify">
+          <p data-aos="fade-right" data-aos-delay="300" className="max-w-[500px] my-3 sm:mt-0 font-normal text-lg sm:text-base tracking-wide text-DS-charcoal dark:text-DS-beige text-justify">
             Jauhkan kesalahpahaman. Mulailah terhubung dengan Bahasa Isyarat bersama{" "}
             <span className=" text-DS-verdigris font-bold">
               Dial<span className=" text-DS-orangecarrot">o</span>g Sunyi
@@ -25,7 +25,7 @@ const Beranda = () => {
             Ayo, belajar bahasa isyarat sekarang dan jadilah bagian dari komunikasi tanpa batas!
           </p>
           <div>
-            <div className="mt-4 gap-x-6 rounded-md">
+            <div data-aos="fade-up" data-aos-delay="300" className="mt-4 gap-x-6 rounded-md">
                 <a href="/kelas" className="inline-block rounded-xl border border-DS-verdigris bg-DS-verdigris px-6 py-2 text-sm font-medium hover:font-semibold text-white hover:bg-DS-beige hover:text-DS-verdigris focus:outline-none focus:ring active:text-DS-verdigris">
                   Mulai Belajar Sekarang
                 </a>
@@ -231,13 +231,13 @@ const Beranda = () => {
       </section>
 
       <section className="px-16">
-        <div className=" text-center py-10 sm:py-8">
+        <div data-aos="fade-up" data-aos-delay="300" className=" text-center py-10 sm:py-8">
             <h2 className="font-black text-4xl sm:text-2xl text-DS-charcoal dark:text-DS-orangecarrot">Frequently Asked Question</h2>
             <hr className="w-48 sm:w-32 h-1 sm:h-0.5 mx-auto my-5 bg-DS-verdigris border-0 rounded dark:text-DS-orangecarrot"></hr>
         </div>
 
         <div className="space-y-4 text-lg md:text-base mb-4">
-            <details className="group relative">
+            <details data-aos="fade-right" data-aos-delay="300" className="group relative">
                 <summary className="flex cursor-pointer items-center justify-between gap-1.5 bg-transparent p-4 text-DS-charcoal border-b-2 border-DS-charcoal group-open:border-b-0 dark:text-DS-beige dark:border-white">
                     <h2 className="font-semibold">Apa itu bahasa isyarat?</h2>
                     <svg className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -249,7 +249,7 @@ const Beranda = () => {
                 </p>
             </details>
 
-            <details className="group relative">
+            <details data-aos="fade-left" data-aos-delay="300" className="group relative">
                 <summary className="flex cursor-pointer items-center justify-between gap-1.5 bg-transparent p-4 text-DS-charcoal border-b-2 border-DS-charcoal group-open:border-b-0 dark:text-DS-beige dark:border-white">
                     <h2 className="font-semibold">Apakah bahasa isyarat yang berlaku di setiap daerah dan/atau negara sama?</h2>
                     <svg className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -262,7 +262,7 @@ const Beranda = () => {
                 </p>
             </details>
 
-            <details className="group relative">
+            <details data-aos="fade-right" data-aos-delay="300" className="group relative">
                 <summary className="flex cursor-pointer items-center justify-between gap-1.5 bg-transparent p-4 text-DS-charcoal border-b-2 border-DS-charcoal group-open:border-b-0 dark:text-DS-beige dark:border-white">
                     <h2 className="font-semibold">Apakah ada bahasa isyarat yang berlaku secara universal?</h2>
                     <svg className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -276,7 +276,7 @@ const Beranda = () => {
                 </p>
             </details>
         </div>
-        <div className="flex justify-center mb-12">
+        <div data-aos="fade-up" data-aos-delay="300" className="flex justify-center mb-12">
             <div className="mt-4 gap-x-6 rounded-md">
                 <a href="/faq" className="inline-block rounded-xl border border-DS-verdigris bg-DS-verdigris px-6 py-2 text-sm font-medium hover:font-semibold text-white hover:bg-DS-beige hover:text-DS-verdigris focus:outline-none focus:ring active:text-DS-verdigris">
                   Baca Selengkapnya

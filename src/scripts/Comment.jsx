@@ -1,77 +1,122 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
-const Comments = ({ articleId }) => {
+const CommentSection = ({ articleId }) => {
   const [comments, setComments] = useState([]);
-  const [newComment, setNewComment] = useState('');
+  const [name, setName] = useState('');
+  const [comment, setComment] = useState('');
   const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Fetch comments for the article
-    fetch(`https://api-article.abdulfaqih.eu.org/article/${articleId}/comments`)
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.status === 'success') {
-          setComments(data.data.comments);
+    const fetchComments = async () => {
+      try {
+        const response = await axios.get('https://dialog-sunyi-be.vercel.app/api/comments');
+        if (response.data.status === 'success') {
+          const filteredComments = response.data.data.filter(comment => comment.id_artikel === articleId);
+          setComments(filteredComments);
         } else {
-          setError(`Failed to fetch comments: ${data.message}`);
+          setError('Failed to fetch comments');
         }
-      })
-      .catch((error) => setError(`Error fetching comments: ${error.message}`));
+      } catch (error) {
+        setError(`Error fetching comments: ${error.message}`);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchComments();
   }, [articleId]);
 
-  const handleCommentSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Post new comment
-    fetch(`https://api-article.abdulfaqih.eu.org/article/${articleId}/comments`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ content: newComment }),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.status === 'success') {
-          // Update comments state with the new comment
-          setComments([...comments, data.data.comment]);
-          setNewComment('');
-        } else {
-          setError(`Failed to add comment: ${data.message}`);
-        }
-      })
-      .catch((error) => setError(`Error adding comment: ${error.message}`));
+
+    if (!name || !comment) {
+      setError('Name and comment cannot be empty');
+      return;
+    }
+
+    try {
+      const response = await axios.post('https://dialog-sunyi-be.vercel.app/api/comments', {
+        name,
+        comment,
+        id_artikel: articleId,
+      });
+
+      if (response.data.status === 'success') {
+        setComments((prevComments) => [...prevComments, response.data.data]);
+        setName('');
+        setComment('');
+        setError(null);
+      } else {
+        setError('Failed to post comment');
+      }
+    } catch (error) {
+      setError(`Error posting comment: ${error.message}`);
+    }
   };
 
+  if (loading) {
+    return <div>Loading comments...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
+
   return (
-    <div className="comments-section">
-      <h2 className="text-xl font-bold mb-4">Comments</h2>
-      {error && <p className="text-red-500">{error}</p>}
-      <form onSubmit={handleCommentSubmit} className="mb-4">
-        <textarea
-          className="w-full p-2 border rounded-md mb-2"
-          value={newComment}
-          onChange={(e) => setNewComment(e.target.value)}
-          placeholder="Add a comment"
-        />
-        <button
-          type="submit"
-          className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
-        >
-          Submit
-        </button>
-      </form>
-      <div className="comments-list">
+    <div className="border-t-[1px] border-DS-charcoal dark:border-DS-beige pt-4 p-6">
+      <h2 className="text-lg font-bold mb-4 text-DS-charcoal dark:text-DS-beige">Kirimkan Komentar</h2>
+      <div className="flex flex-col space-y-4">
         {comments.map((comment) => (
-          <div key={comment.id} className="comment mb-4 p-2 border rounded-md">
-            <p>{comment.content}</p>
-            <p className="text-gray-600 text-sm">by {comment.author} on {new Date(comment.date).toLocaleDateString()}</p>
+          <div key={comment._id} className="bg-DS-beige dark:bg-DS-charcoal text-DS-charcoal dark:text-DS-beige p-4 rounded-lg shadow-md">
+            <h3 className="text-lg text-DS-charcoal dark:text-DS-beige font-bold">{comment.name}</h3>
+            <p className="text-DS-charcoal text-sm mb-2">Posted on {new Date(comment.date).toLocaleDateString()}</p>
+            <p className="text-DS-charcoal">{comment.comment}</p>
           </div>
         ))}
+        <form className="bg-DS-beige dark:bg-DS-charcoal p-4 rounded-lg shadow-md" onSubmit={handleSubmit}>
+          <h3 className="text-lg font-bold mb-2 text-DS-charcoal dark:text-DS-beige">Tambah Komentar</h3>
+          <div className="mb-4">
+            <label className="block text-gray-700 font-bold mb-2" htmlFor="name">
+              Nama
+            </label>
+            <input
+              className="bg-DS-beige dark:bg-DS-charcoal shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="name"
+              type="text"
+              placeholder="Masukkan namamu"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+          </div>
+          <div className="flex flex-row justify-between space-x-4">
+            <div className="comment flex-grow mb-4">
+              <label className="block text-gray-700 font-bold mb-2" htmlFor="comment">
+                Komentar
+              </label>
+              <textarea
+                className="bg-DS-beige dark:bg-DS-charcoal shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="comment"
+                rows="3"
+                placeholder="Tulis komentarmu"
+                value={comment}
+                onChange={(e) => setComment(e.target.value)}
+              ></textarea>
+            </div>
+            <div className="submit-btn content-center">
+              <button className="bg-DS-verdigris hover:bg-DS-beige text-white hover:text-DS-verdigris focus:ring-4 focus:outline-none focus:ring-DS-celeste font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center me-2" type="submit">
+                <svg className="w-4 h-4 size-6 stroke-[1.5px] stroke-current" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <path d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          
+        </form>
       </div>
     </div>
   );
 };
 
-export default Comments;
+export default CommentSection;
