@@ -14,14 +14,14 @@ const TentangKami = () => {
         <img data-aos="fade-right" data-aos-delay="300" className="object-cover max-w-fit h-72 lg:max-h-80 md:h-56 2sm:h-36" src="/image/logo-light-bg.svg" alt="logo dialog sunyi" />
         <div data-aos="fade-left" data-aos-delay="300" className="flex flex-col justify-between p-4 leading-normal">
           <h1 className="mb-2 text-4xl sm:text-2xl font-extrabold sm:font-bold tracking-tight text-DS-charcoal dark:text-DS-orangecarrot">Tentang Kami</h1>
-          <p className="my-3 sm:mt-0 font-normal text-xl sm:text-base 2sm:text-sm text-DS-charcoal dark:text-DS-beige text-justify">
+          <p className="max-w-[600px] my-3 sm:mt-0 font-normal text-xl sm:text-base 2sm:text-sm text-DS-charcoal dark:text-DS-beige text-justify">
             Selamat datang di{" "}
             <span className=" text-DS-verdigris font-bold">
               Dial<span className=" text-DS-orangecarrot">o</span>g Sunyi
             </span>
             , sebuah platform yang berdedikasi untuk memperluas akses dan kesadaran terhadap bahasa isyarat di Indonesia.{" "}
           </p>
-          <p className="my-3 sm:my-0 font-normal text-xl sm:text-base 2sm:text-sm text-DS-charcoal dark:text-DS-beige text-justify">
+          <p className="max-w-[600px] my-3 sm:my-0 font-normal text-xl sm:text-base 2sm:text-sm text-DS-charcoal dark:text-DS-beige text-justify">
             Kami percaya bahwa setiap individu <span className=" text-DS-orangecarrot font-bold">berhak untuk belajar</span> dan menghargai kekayaan budaya serta komunikasi yang ditawarkan oleh{" "}
             <span className=" text-DS-orangecarrot font-bold">bahasa isyarat</span>.
           </p>
