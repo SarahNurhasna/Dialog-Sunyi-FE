@@ -34,7 +34,7 @@ const TentangKami = () => {
         </div>
         <section  className="flex flex-row lg:flex-col justify-center items-center px-16 md:px-9 2sm:px-5 py-8 lg:py-5 gap-8 bg-ds ">
           <div data-aos="fade-up" data-aos-delay="300" className="flex flex-col justify-between p-4 leading-normal">
-            <p className="my-3 sm:mt-0 font-normal text-xl sm:text-base 2sm:text-sm text-DS-beige text-justify">
+            <p className="max-w-[600px] my-3 sm:mt-0 font-normal text-xl sm:text-base 2sm:text-sm text-DS-beige text-justify">
               {" "}
               <span className=" text-DS-verdigris font-bold">
                 Dial<span className=" text-DS-orangecarrot">o</span>g Sunyi
@@ -42,7 +42,7 @@ const TentangKami = () => {
               lahir dari pemahaman mendalam akan tantangan yang dihadapi oleh komunitas tuli di Indonesia. Kurangnya akses informasi dan kesadaran akan pentingnya bahasa isyarat telah menjadi hambatan utama bagi mereka yang ingin belajar
               dan berpartisipasi secara penuh dalam masyarakat.
             </p>
-            <p className="my-3 sm:my-0 pt-9 sm:pt-3 font-normal text-xl sm:text-base 2sm:text-sm text-DS-beige text-justify">
+            <p className="max-w-[600px] my-3 sm:my-0 pt-9 sm:pt-3 font-normal text-xl sm:text-base 2sm:text-sm text-DS-beige text-justify">
               {" "}
               <span className=" text-DS-verdigris font-bold">
                 Dial<span className=" text-DS-orangecarrot">o</span>g Sunyi
