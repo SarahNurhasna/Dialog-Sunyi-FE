@@ -23,9 +23,9 @@ const ArticleList = () => {
   }, []);
 
   return (
-    <div className="grid gap-x-14 gap-y-8 grid-cols-3 md:grid-cols-2 sm:grid-cols-1 pb-12 bg-DS-beige">
+    <div className="grid gap-x-14 gap-y-8 grid-cols-1 ilg:grid-cols-3 imd:grid-cols-2 pb-12 bg-DS-beige dark:bg-DS-charcoal">
       {articles.map((article) => (
-        <div key={article._id} className="group border border-gray-200 rounded-md shadow-md transition-all duration-300 ease-in-out overflow-hidden">
+        <div key={article._id} className="group border border-gray-200 rounded-md shadow-md transition-all duration-300 ease-in-out overflow-hidden bg-DS-beige">
           <img src={article.image} alt={article.name} className="image-card object-cover w-full max-h-48 group-hover:scale-110 transition-all duration-300 ease-in-out" />
           <div className="card-body mx-2 my-4 p-4">
             <div className="mb-2 text-DS-verdigris transition-all duration-300 ease-in-out flex lg:flex-wrap-reverse items-center justify-between">
