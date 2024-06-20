@@ -9,7 +9,7 @@ const TentangKami = () => {
   }, []);
 
   return (
-      <div className=" bg-DS-beige dark:bg-DS-charcoal">
+      <div className=" bg-DS-beige dark:bg-DS-charcoal-950">
         <section className="flex flex-row lg:flex-col justify-center items-center px-16 md:px-9 2sm:px-5 mt-24 lg:mt-5 py-10 sm:py-8 gap-8">
           <img data-aos="fade-right" data-aos-delay="300" className="object-cover max-w-fit h-72 lg:max-h-80 md:h-56 2sm:h-36" src="/image/logo-light-bg.svg" alt="logo dialog sunyi" />
           <div data-aos="fade-left" data-aos-delay="300" className="flex flex-col justify-between p-4 leading-normal">
@@ -59,7 +59,7 @@ const TentangKami = () => {
 
         <section>
           <div className=" text-center pt-10 sm:pt-8">
-            <h1 data-aos="fade-up" data-aos-delay="300" className="font-extrabold text-4xl sm:text-2xl pb-5 text-DS-charcoal">Tim Kami</h1>
+            <h1 data-aos="fade-up" data-aos-delay="300" className="font-extrabold text-4xl sm:text-2xl pb-5 text-DS-charcoal dark:text-DS-orangecarrot">Tim Kami</h1>
             <hr data-aos="fade-up" data-aos-delay="300" className="w-32 sm:w-32 h-1 sm:h-0.5 mx-auto bg-DS-verdigris border-0 rounded"></hr>
           </div>
           
