@@ -101,7 +101,7 @@ const Kelas = () => {
             <button
               onClick={handleClosePopup}
               type="button"
-              className="absolute top-2 right-2 text-gray-400 bg-transparent hover:bg-red-500 hover:text-DS-beige rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+              className="absolute top-2 right-2 text-gray-400 bg-transparent hover:bg-red-500 hover:text-DS-beige rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:text-white"
               data-modal-hide="static-modal"
             >
               <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
