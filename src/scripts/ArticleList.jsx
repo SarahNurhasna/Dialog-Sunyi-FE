@@ -27,7 +27,7 @@ const ArticleList = () => {
     <div className="grid gap-x-14 gap-y-8 grid-cols-1 ilg:grid-cols-3 imd:grid-cols-2 pb-12 bg-inherit dark:bg-inherit">
       {articles.map((article) => (
         <div key={article._id} className="group border border-gray-200 rounded-md shadow-md transition-all duration-300 ease-in-out overflow-hidden bg-DS-beige">
-          <img src={article.image} alt={article.name} className="image-card object-cover w-full max-h-48 group-hover:scale-110 transition-all duration-300 ease-in-out" />
+          <img src={article.image} alt={article.name} className="image-card object-cover w-full max-h-48 group-hover:scale-110 transition-all duration-300 ease-in-out" loading="lazy" />
           <div className="card-body mx-2 my-4 p-4">
             <div className="mb-2 text-DS-verdigris transition-all duration-300 ease-in-out flex lg:flex-wrap-reverse items-center justify-between">
               <span className="tag font-normal bg-transparent border-DS-verdigris border-x border-y rounded-md px-2 py-1 text-base text-DS-verdigris group-hover:bg-DS-verdigris group-hover:text-white group-hover:font-medium">

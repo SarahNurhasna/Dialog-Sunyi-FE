@@ -15,7 +15,7 @@ const Artikel = () => {
             <div className="container px-16 md:px-5 w-full max-w-7xl m-auto">
                 <div className="hero-content flex flex-row justify-between py-16">
                     <div className="hero-left w-full mdx:hidden flex flex-auto ilg:w-1/2 ilg:flex-shrink-0 ilg:flex-grow-0 ilg:flex-auto justify-center">
-                        <img src="/image/hero-artikel.svg" alt="hero" className="ilg:w-[360px] imdx:w-[300px] ixl:w-[500px]" data-aos="fade-right" />
+                        <img src="/image/hero-artikel.svg" alt="hero" className="ilg:w-[360px] imdx:w-[300px] ixl:w-[500px]" data-aos="fade-right" loading="lazy" />
                     </div>
                     <div className="hero-right w-full content-center">
                         <div className="max-w-xl" data-aos="fade-left">

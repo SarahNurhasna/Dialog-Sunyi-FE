@@ -23,7 +23,7 @@ const Kelas = () => {
   return (
     <div className="bg-DS-beige dark:bg-DS-charcoal-950">
       <section className="flex ilg:flex-row-reverse lg:flex-col justify-center items-center md:px-5 2sm:px-0 2sm:pt-0 m-24 lg:m-9 sm:m-5 gap-8">
-        <img data-aos="fade-left" data-aos-delay="300" className="object-cover max-w-fit h-72 sm:h-56 lg:h-62 " src="/image/hero-kelas.svg" alt="logo dialog sunyi" />
+        <img data-aos="fade-left" data-aos-delay="300" className="object-cover max-w-fit h-72 sm:h-56 lg:h-62 " src="/image/hero-kelas.svg" alt="logo dialog sunyi" loading="lazy" />
         <div className="flex flex-col justify-between p-4 sm:p-0 leading-normal">
           <h1 data-aos="fade-down" data-aos-delay="300" className="mb-4 text-4xl sm:text-2xl font-extrabold sm:font-bold tracking-tight text-DS-charcoal dark:text-DS-orangecarrot">KELAS</h1>
           <p data-aos="fade-right" data-aos-delay="300" className="my-3 max-w-[700px] sm:mt-0 font-normal text-lg sm:text-base 2sm:text-sm tracking-wide text-DS-charcoal dark:text-DS-beige text-justify">
@@ -110,7 +110,7 @@ const Kelas = () => {
               <span className="sr-only">Close modal</span>
             </button>
             <div className="class__body grid gap-8 md:gap-3 grid-cols-1 imd:grid-cols-2 md:pt-2 items-center">
-              <img src={selectedClass.poster_img} alt={selectedClass.title} className="class__image object-cover m-auto md:w-56 " />
+              <img src={selectedClass.poster_img} alt={selectedClass.title} className="class__image object-cover m-auto md:w-56 " loading="lazy" />
               <div className="class__info">
                 <h2 className="text-2xl md:text-xl font-extrabold md:font-bold mb-2 text-center text-DS-charcoal">{selectedClass.title}</h2>
                 <h3 className="text-lg md:text-base font-medium mb-4 text-center text-DS-verdigris underline">{selectedClass.organizer}</h3>

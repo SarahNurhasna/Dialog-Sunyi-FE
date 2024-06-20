@@ -11,7 +11,7 @@ const TentangKami = () => {
   return (
     <div className=" bg-DS-beige dark:bg-DS-charcoal-950">
       <section className="flex flex-row lg:flex-col justify-center items-center px-16 md:px-9 2sm:px-5 mt-24 lg:mt-5 py-10 sm:py-8 gap-8">
-        <img data-aos="fade-right" data-aos-delay="300" className="object-cover max-w-fit h-72 lg:max-h-80 md:h-56 2sm:h-36" src="/image/logo-light-bg.svg" alt="logo dialog sunyi" />
+        <img data-aos="fade-right" data-aos-delay="300" className="object-cover max-w-fit h-72 lg:max-h-80 md:h-56 2sm:h-36" src="/image/logo-light-bg.svg" alt="logo dialog sunyi" loading="lazy" />
         <div data-aos="fade-left" data-aos-delay="300" className="flex flex-col justify-between p-4 leading-normal">
           <h1 className="mb-2 text-4xl sm:text-2xl font-extrabold sm:font-bold tracking-tight text-DS-charcoal dark:text-DS-orangecarrot">Tentang Kami</h1>
           <p className="max-w-[600px] my-3 sm:mt-0 font-normal text-xl sm:text-base 2sm:text-sm text-DS-charcoal dark:text-DS-beige text-justify">
@@ -51,7 +51,7 @@ const TentangKami = () => {
               sosial.
             </p>
           </div>
-          <img data-aos="fade-down" data-aos-delay="300" className="object-cover max-w-fit h-96 lg:max-h-80 md:h-56 2sm:h-48 rounded-t-lg md:rounded-none md:rounded-l-lg" src="/image/latar-belakang.svg" alt="logo dialog sunyi" />
+          <img data-aos="fade-down" data-aos-delay="300" className="object-cover max-w-fit h-96 lg:max-h-80 md:h-56 2sm:h-48 rounded-t-lg md:rounded-none md:rounded-l-lg" loading="lazy" src="/image/latar-belakang.svg" alt="logo dialog sunyi" />
         </section>
       </section>
       <section>
@@ -63,7 +63,7 @@ const TentangKami = () => {
         <div className="flex flex-row lg:flex-col justify-center items-center px-16 md:px-9 2sm:px-5 py-10 sm:py-8 gap-8">
           <div data-aos="flip-right" data-aos-delay="300" className="w-full max-w-xs bg-DS-charcoal border border-gray-200 rounded-2xl shadow-2xl">
             <div className="flex flex-col items-center pb-10">
-              <img className="w-60 h-60 mx-5 mt-10 mb-6 rounded-2xl shadow-lg bg-white" src="/image/jijaargh.svg" alt="Jijah image" />
+              <img className="w-60 h-60 mx-5 mt-10 mb-6 rounded-2xl shadow-lg bg-white" src="/image/jijaargh.svg" alt="Jijah image" loading="lazy" />
               <h5 className="mb-1 text-xl font-medium text-DS-beige dark:text-white">Nur Azizah</h5>
               <span className="text-sm text-gray-400">Frontend Developer</span>
               <div className="flex mt-4 md:mt-6">
@@ -111,7 +111,7 @@ const TentangKami = () => {
           </div>{" "}
           <div data-aos="flip-up" data-aos-delay="300" className="w-full max-w-xs bg-DS-charcoal border border-gray-200 rounded-2xl shadow-2xl">
             <div className="flex flex-col items-center pb-10">
-              <img className="w-60 h-60 mx-5 mt-10 mb-6 rounded-2xl shadow-lg bg-white" src="/image/sarah.svg" alt="sarah image" />
+              <img className="w-60 h-60 mx-5 mt-10 mb-6 rounded-2xl shadow-lg bg-white" src="/image/sarah.svg" alt="sarah image" loading="lazy" />
               <h5 className="mb-1 text-xl font-medium text-DS-beige dark:text-white">Sarah Nurhasna K.</h5>
               <span className="text-sm text-gray-400">Frontend Developer</span>
               <div className="flex mt-4 md:mt-6">
@@ -159,7 +159,7 @@ const TentangKami = () => {
           </div>
           <div data-aos="flip-left" data-aos-delay="300" className="w-full max-w-xs bg-DS-charcoal border border-gray-200 rounded-2xl shadow-2xl">
             <div className="flex flex-col items-center pb-10">
-              <img className="w-60 h-60 mx-5 mt-10 mb-6 rounded-2xl shadow-lg bg-white" src="/image/chris.svg" alt="chris image" />
+              <img className="w-60 h-60 mx-5 mt-10 mb-6 rounded-2xl shadow-lg bg-white" src="/image/chris.svg" alt="chris image" loading="lazy" />
               <h5 className="mb-1 text-xl font-medium text-DS-beige dark:text-white">Christofer Nathan Nael K.</h5>
               <span className="text-sm text-gray-400">Backend Developer</span>
               <div className="flex mt-4 md:mt-6">
