@@ -97,7 +97,7 @@ const Kelas = () => {
 
       {selectedClass && (
         <div data-aos="zoom-in" className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-          <div className=" bg-DS-beige px-8 py-10 rounded-lg shadow-lg max-w-[250px] imd:max-w-2xl w-full relative">
+          <div className=" bg-DS-beige px-8 py-10 rounded-lg shadow-lg max-w-[350px] 2sm:max-w-[300px] imd:max-w-2xl w-full relative">
             <button
               onClick={handleClosePopup}
               type="button"
