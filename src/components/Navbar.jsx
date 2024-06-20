@@ -31,7 +31,7 @@ const Navbar = () => {
         <div className="flex items-center ilg:order-2 space-x-3 ilg:space-x-0 rtl:space-x-reverse">
           <button
             type="button"
-            className="text-white hover:outline font-medium rounded-lg text-sm px-4 py-2 text-center max-[400px]:px-2 max-[400px]:py-1"
+            className="text-white hover:outline font-medium rounded-lg text-sm px-4 py-2 text-center 2sm:px-1 max-[400px]:px-1 max-[400px]:py-1"
           >
             <img
               src="/icon/moon.svg"

@@ -12,7 +12,7 @@ const Beranda = () => {
   return (
     <div className=" bg-DS-beige dark:bg-DS-charcoal">
       <section className="flex ilg:flex-row-reverse lg:flex-col justify-center items-center px-16 md:px-9 2sm:px-5 mt-[90px] lg:mt-12 sm:mt-9 py-10 sm:py-8 gap-8">
-        <img className="object-cover max-w-fit h-[285px] 2lg:h-[370px] lg:max-h-96 md:h-56 2sm:h-48" src="/image/hero-home.svg" alt="logo dialog sunyi" />
+        <img className="object-cover max-w-fit h-72 lg:max-h-80 md:h-56 2sm:h-48" src="/image/hero-home.svg" alt="logo dialog sunyi" />
         <div className="flex flex-col justify-between p-4 leading-normal">
           <h1 className="mb-4 text-4xl sm:text-2xl font-extrabold sm:font-bold tracking-tight text-DS-charcoal dark:text-DS-orangecarrot">Dialog Tanpa Suara
           <br/>Komunikasi Tanpa Batas</h1>

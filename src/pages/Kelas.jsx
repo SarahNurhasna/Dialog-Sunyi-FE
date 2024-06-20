@@ -12,11 +12,11 @@ const Kelas = () => {
 
   return (
     <div className=" bg-DS-beige dark:bg-DS-charcoal">
-      <section className="flex ilg:flex-row-reverse lg:flex-col justify-center items-center px-16 md:px-9 2sm:px-5 m-[90px] lg:mt-12 sm:mt-9 py-10 sm:py-8 gap-8">
-        <img className="object-cover max-w-fit h-[285px] 2lg:h-[370px] lg:max-h-96 md:h-56 2sm:h-48" src="/image/hero-kelas.svg" alt="logo dialog sunyi" />
-        <div className="flex flex-col justify-between p-4 leading-normal">
+      <section className="flex ilg:flex-row-reverse lg:flex-col justify-center items-center md:px-5 2sm:px-0 2sm:pt-0 m-24 lg:m-9 sm:m-5 gap-8">
+        <img className="object-cover max-w-fit h-72 sm:h-56 lg:h-62 " src="/image/hero-kelas.svg" alt="logo dialog sunyi" />
+        <div className="flex flex-col justify-between p-4 sm:p-0 leading-normal">
           <h1 className="mb-4 text-4xl sm:text-2xl font-extrabold sm:font-bold tracking-tight text-DS-charcoal dark:text-DS-orangecarrot">KELAS</h1>
-          <p className="my-3 max-w-[700px] sm:mt-0 font-normal text-lg sm:text-base tracking-wide text-DS-charcoal dark:text-DS-beige text-justify">
+          <p className="my-3 max-w-[700px] sm:mt-0 font-normal text-lg sm:text-base 2sm:text-sm tracking-wide text-DS-charcoal dark:text-DS-beige text-justify">
             Sedang bingung mau <span className=" text-DS-orangecarrot font-semibold">belajar bahasa isyarat</span> di mana?
             <br />
             <br />
