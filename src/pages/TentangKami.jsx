@@ -11,7 +11,7 @@ const TentangKami = () => {
   return (
       <div className=" bg-DS-beige dark:bg-DS-charcoal-950">
         <section className="flex flex-row lg:flex-col justify-center items-center px-16 md:px-9 2sm:px-5 mt-24 lg:mt-5 py-10 sm:py-8 gap-8">
-          <img data-aos="fade-right" data-aos-delay="300" className="object-cover max-w-fit h-72 lg:max-h-80 md:h-56 2sm:h-36" src="/image/logo-light-bg.svg" alt="logo dialog sunyi" />
+          <img data-aos="fade-right" data-aos-delay="300" className="object-cover max-w-fit h-72 lg:max-h-80 md:h-52 2sm:h-36" src="/image/logo-light-bg.svg" alt="logo dialog sunyi" />
           <div data-aos="fade-left" data-aos-delay="300" className="flex flex-col justify-between p-4 leading-normal">
             <h1 className="mb-2 text-4xl sm:text-2xl font-extrabold sm:font-bold tracking-tight text-DS-charcoal dark:text-DS-orangecarrot">Tentang Kami</h1>
             <p className="max-w-[600px] my-3 sm:mt-0 font-normal text-xl sm:text-base text-DS-charcoal dark:text-DS-beige text-justify">
