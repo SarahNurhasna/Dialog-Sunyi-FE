@@ -2,7 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@layer utilities {
+  .bg-setengah {
+    position: relative;
+    background: linear-gradient(180deg, #FBF9F1 50%, #24B2B4 50%);
+  }
+  .bg-darksetengah {
+    position: relative;
+    background: linear-gradient(180deg, #2D3E4A 50%, #24B2B4 50%);
+  }
+}
 
 :root {
   margin: 0;

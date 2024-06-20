@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect } from 'react';
-import ArticleList from "../scripts/ArticleCard";
+import ArticleList from "../scripts/ArticleList";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
