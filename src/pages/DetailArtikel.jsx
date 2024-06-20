@@ -51,7 +51,7 @@ const DetailArticle = () => {
               <p className="text-gray-600">{articleDetail.author}</p>
             </div>
           </div>
-          <div className="text-gray-700 text-justify text-xl font-normal">{articleDetail.content}</div>
+          <div className="text-gray-700 text-justify text-xl font-normal" dangerouslySetInnerHTML={{ __html: articleDetail.content }}/>
         </div>
       </div>
     </div>
