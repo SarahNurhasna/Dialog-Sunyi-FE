@@ -60,7 +60,7 @@ const Footer = () => {
                 <div className="flex flex-col gap-5 items-center sm:items-start">
                   <ul className="flex flex-row gap-5">
                     <li>
-                      <a href="#" rel="noreferrer" target="_blank" className="text-white transition hover:text-DS-orangecarrot">
+                      <a href="/https://github.com/SarahNurhasna/Dialog-Sunyi-FE" rel="noreferrer" target="_blank" className="text-white transition hover:text-DS-orangecarrot">
                         <span className="sr-only">GitHub</span>
 
                         <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -73,7 +73,7 @@ const Footer = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="#" rel="noreferrer" target="_blank" className="text-white transition hover:text-DS-orangecarrot">
+                      <a href="mailto:C624-PS129@dicoding.org" rel="noreferrer" target="_blank" className="text-white transition hover:text-DS-orangecarrot">
                         <span className="sr-only">Mail</span>
 
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
@@ -86,7 +86,7 @@ const Footer = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="#" rel="noreferrer" target="_blank" className="text-white transition hover:text-DS-orangecarrot">
+                      <a href="https://www.instagram.com/" rel="noreferrer" target="_blank" className="text-white transition hover:text-DS-orangecarrot">
                         <span className="sr-only">Instagram</span>
 
                         <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
