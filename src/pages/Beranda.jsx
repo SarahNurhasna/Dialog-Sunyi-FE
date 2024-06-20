@@ -10,7 +10,7 @@ const Beranda = () => {
       }, []);
 
   return (
-    <div className=" bg-DS-beige dark:bg-DS-charcoal">
+    <div className=" bg-DS-beige dark:bg-DS-charcoal-950">
       <section className="flex ilg:flex-row-reverse lg:flex-col justify-center items-center px-16 md:px-9 2sm:px-5 mt-[90px] lg:mt-12 sm:mt-9 py-10 sm:py-8 gap-8">
         <img data-aos="fade-left" data-aos-delay="300" className="object-cover max-w-fit h-72 lg:max-h-80 md:h-56 2sm:h-48" src="/image/hero-home.svg" alt="hero home" />
         <div className="flex flex-col justify-between p-4 leading-normal">
