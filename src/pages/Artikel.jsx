@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 
 const Artikel = () => {
     useEffect(() => {
-        AOS.init(); // Re-initialize AOS when component mounts
+        AOS.init(); 
       }, []);
 
     return (
