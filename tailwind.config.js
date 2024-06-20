@@ -16,6 +16,7 @@ module.exports = withMT({
       colors: {
         DS: {
           charcoal: "#2D3E4A",
+          "charcoal-950": "#1B2831",
           davysgray: "#5F5957",
           beige: "#FBF9F1",
           "beige-100": "#F9F7ED",
@@ -44,5 +45,6 @@ module.exports = withMT({
 
     },
   },
+  darkMode: 'class',
   plugins: [require("flowbite/plugin")],
 });

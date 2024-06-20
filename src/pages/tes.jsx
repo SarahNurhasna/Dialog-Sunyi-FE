@@ -1,40 +1,34 @@
 /* eslint-disable no-unused-vars */
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React from "react";
 
 const TentangKami = () => {
-  useEffect(() => {
-    AOS.init(); 
-  }, []);
-
   return (
-    <div className=" bg-DS-beige dark:bg-DS-charcoal-950">
+    <div className=" bg-DS-beige dark:bg-DS-charcoal">
       <section className="flex flex-row lg:flex-col justify-center items-center px-16 md:px-9 2sm:px-5 mt-24 lg:mt-5 py-10 sm:py-8 gap-8">
-        <img data-aos="fade-right" data-aos-delay="300" className="object-cover max-w-fit h-72 lg:max-h-80 md:h-56 2sm:h-36" src="/image/logo-light-bg.svg" alt="logo dialog sunyi" />
-        <div data-aos="fade-left" data-aos-delay="300" className="flex flex-col justify-between p-4 leading-normal">
+        <img className="object-cover max-w-fit h-72 lg:max-h-80 md:h-56 2sm:h-36" src="/image/logo-light-bg.svg" alt="logo dialog sunyi" />
+        <div className="flex flex-col justify-between p-4 leading-normal">
           <h1 className="mb-2 text-4xl sm:text-2xl font-extrabold sm:font-bold tracking-tight text-DS-charcoal dark:text-DS-orangecarrot">Tentang Kami</h1>
-          <p className="max-w-[600px] my-3 sm:mt-0 font-normal text-xl sm:text-base 2sm:text-sm text-DS-charcoal dark:text-DS-beige text-justify">
+          <p className="my-3 sm:mt-0 font-normal text-xl sm:text-base text-DS-charcoal dark:text-DS-beige text-justify">
             Selamat datang di{" "}
             <span className=" text-DS-verdigris font-bold">
               Dial<span className=" text-DS-orangecarrot">o</span>g Sunyi
             </span>
             , sebuah platform yang berdedikasi untuk memperluas akses dan kesadaran terhadap bahasa isyarat di Indonesia.{" "}
           </p>
-          <p className="max-w-[600px] my-3 sm:my-0 font-normal text-xl sm:text-base 2sm:text-sm text-DS-charcoal dark:text-DS-beige text-justify">
+          <p className="my-3 sm:my-0 pt-9 sm:pt-3 font-normal text-xl sm:text-base text-DS-charcoal dark:text-DS-beige text-justify">
             Kami percaya bahwa setiap individu <span className=" text-DS-orangecarrot font-bold">berhak untuk belajar</span> dan menghargai kekayaan budaya serta komunikasi yang ditawarkan oleh{" "}
             <span className=" text-DS-orangecarrot font-bold">bahasa isyarat</span>.
           </p>
         </div>
       </section>
       <section className="bg-DS-verdigris-700 lg:mt-5">
-        <div data-aos="fade-up" data-aos-delay="300" className=" text-center mt-24 lg:mt-0 pt-10 sm:pt-8">
+        <div className=" text-center mt-24 lg:mt-0 pt-10 sm:pt-8">
           <h1 className="font-extrabold text-4xl sm:text-2xl pb-5 text-DS-beige">Latar Belakang</h1>
           <hr className="w-48 sm:w-32 h-1 sm:h-0.5 mx-auto bg-DS-beige border-0 rounded"></hr>
         </div>
-        <section  className="flex flex-row lg:flex-col justify-center items-center px-16 md:px-9 2sm:px-5 py-8 lg:py-5 gap-8 bg-ds ">
-          <div data-aos="fade-up" data-aos-delay="300" className="flex flex-col justify-between p-4 leading-normal">
-            <p className="max-w-[600px] my-3 sm:mt-0 font-normal text-xl sm:text-base 2sm:text-sm text-DS-beige text-justify">
+        <section className="flex flex-row lg:flex-col justify-center items-center px-16 md:px-9 2sm:px-5 py-8 lg:py-5 gap-8 bg-ds ">
+          <div className="flex flex-col justify-between p-4 leading-normal">
+            <p className="my-3 sm:mt-0 font-normal text-xl sm:text-base text-DS-beige text-justify">
               {" "}
               <span className=" text-DS-verdigris font-bold">
                 Dial<span className=" text-DS-orangecarrot">o</span>g Sunyi
@@ -42,7 +36,7 @@ const TentangKami = () => {
               lahir dari pemahaman mendalam akan tantangan yang dihadapi oleh komunitas tuli di Indonesia. Kurangnya akses informasi dan kesadaran akan pentingnya bahasa isyarat telah menjadi hambatan utama bagi mereka yang ingin belajar
               dan berpartisipasi secara penuh dalam masyarakat.
             </p>
-            <p className="max-w-[600px] my-3 sm:my-0 pt-9 sm:pt-3 font-normal text-xl sm:text-base 2sm:text-sm text-DS-beige text-justify">
+            <p className="my-3 sm:my-0 pt-9 sm:pt-3 font-normal text-xl sm:text-base text-DS-beige text-justify">
               {" "}
               <span className=" text-DS-verdigris font-bold">
                 Dial<span className=" text-DS-orangecarrot">o</span>g Sunyi
@@ -51,17 +45,17 @@ const TentangKami = () => {
               sosial.
             </p>
           </div>
-          <img data-aos="fade-down" data-aos-delay="300" className="object-cover max-w-fit h-96 lg:max-h-80 md:h-56 2sm:h-48 rounded-t-lg md:rounded-none md:rounded-l-lg" src="/image/latar-belakang.svg" alt="logo dialog sunyi" />
+          <img className="object-cover max-w-fit h-96 lg:max-h-80 md:h-56 2sm:h-48 rounded-t-lg md:rounded-none md:rounded-l-lg" src="/image/latar-belakang.svg" alt="logo dialog sunyi" />
         </section>
       </section>
       <section>
-        <div data-aos="fade-down" data-aos-delay="300" className=" text-center pt-10 sm:pt-8">
-          <h1 className="font-extrabold text-4xl sm:text-2xl pb-5 text-DS-charcoal dark:text-DS-beige">Tim Kami</h1>
+        <div className=" text-center pt-10 sm:pt-8">
+          <h1 className="font-extrabold text-4xl sm:text-2xl pb-5 text-DS-charcoal">Tim Kami</h1>
           <hr className="w-32 sm:w-32 h-1 sm:h-0.5 mx-auto bg-DS-verdigris border-0 rounded"></hr>
         </div>
 
         <div className="flex flex-row lg:flex-col justify-center items-center px-16 md:px-9 2sm:px-5 py-10 sm:py-8 gap-8">
-          <div data-aos="flip-right" data-aos-delay="300" className="w-full max-w-xs bg-DS-charcoal border border-gray-200 rounded-2xl shadow-2xl">
+          <div className="w-full max-w-xs bg-DS-charcoal border border-gray-200 rounded-2xl shadow-2xl">
             <div className="flex flex-col items-center pb-10">
               <img className="w-60 h-60 mx-5 mt-10 mb-6 rounded-2xl shadow-lg bg-white" src="/image/jijaargh.svg" alt="Jijah image" />
               <h5 className="mb-1 text-xl font-medium text-DS-beige dark:text-white">Nur Azizah</h5>
@@ -109,7 +103,7 @@ const TentangKami = () => {
               </div>
             </div>
           </div>{" "}
-          <div data-aos="flip-up" data-aos-delay="300" className="w-full max-w-xs bg-DS-charcoal border border-gray-200 rounded-2xl shadow-2xl">
+          <div className="w-full max-w-xs bg-DS-charcoal border border-gray-200 rounded-2xl shadow-2xl">
             <div className="flex flex-col items-center pb-10">
               <img className="w-60 h-60 mx-5 mt-10 mb-6 rounded-2xl shadow-lg bg-white" src="/image/sarah.svg" alt="sarah image" />
               <h5 className="mb-1 text-xl font-medium text-DS-beige dark:text-white">Sarah Nurhasna K.</h5>
@@ -157,7 +151,7 @@ const TentangKami = () => {
               </div>
             </div>
           </div>
-          <div data-aos="flip-left" data-aos-delay="300" className="w-full max-w-xs bg-DS-charcoal border border-gray-200 rounded-2xl shadow-2xl">
+          <div className="w-full max-w-xs bg-DS-charcoal border border-gray-200 rounded-2xl shadow-2xl">
             <div className="flex flex-col items-center pb-10">
               <img className="w-60 h-60 mx-5 mt-10 mb-6 rounded-2xl shadow-lg bg-white" src="/image/chris.svg" alt="chris image" />
               <h5 className="mb-1 text-xl font-medium text-DS-beige dark:text-white">Christofer Nathan Nael K.</h5>

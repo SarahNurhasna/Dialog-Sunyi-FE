@@ -6,12 +6,12 @@ import 'aos/dist/aos.css';
 
 const Artikel = () => {
     useEffect(() => {
-        AOS.init(); // Re-initialize AOS when component mounts
+        AOS.init(); 
       }, []);
 
     return (
 
-        <section className="section-article bg-DS-beige dark:bg-DS-charcoal">
+        <section className="section-article bg-DS-beige dark:bg-DS-charcoal-950">
             <div className="container px-16 md:px-5 w-full max-w-7xl m-auto">
                 <div className="hero-content flex flex-row justify-between py-16">
                     <div className="hero-left w-full mdx:hidden flex flex-auto ilg:w-1/2 ilg:flex-shrink-0 ilg:flex-grow-0 ilg:flex-auto justify-center">

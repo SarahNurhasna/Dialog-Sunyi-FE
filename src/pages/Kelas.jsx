@@ -21,7 +21,7 @@ const Kelas = () => {
   };
 
   return (
-    <div className="bg-DS-beige dark:bg-DS-charcoal">
+    <div className="bg-DS-beige dark:bg-DS-charcoal-950">
       <section className="flex ilg:flex-row-reverse lg:flex-col justify-center items-center md:px-5 2sm:px-0 2sm:pt-0 m-24 lg:m-9 sm:m-5 gap-8">
         <img data-aos="fade-left" data-aos-delay="300" className="object-cover max-w-fit h-72 sm:h-56 lg:h-62 " src="/image/hero-kelas.svg" alt="logo dialog sunyi" />
         <div className="flex flex-col justify-between p-4 sm:p-0 leading-normal">
@@ -51,7 +51,7 @@ const Kelas = () => {
 
       <div className="content flex flex-col gap-8 bg-DS-verdigris-700 min-h-[800px]" id="classes">
         <div className="content-top title ">
-          <div className="title-body text-center text-DS-beige dark:text-DS-orangecarrot font-bold mt-8 text-4xl md:text-2xl sm:text-2xl" data-aos="fade-up" data-aos-delay="300">
+          <div className="title-body text-center text-DS-beige font-bold mt-8 text-4xl md:text-2xl sm:text-2xl" data-aos="fade-up" data-aos-delay="300">
             <h1>Daftar Kelas</h1>
           </div>
           <div className="border-t-4 w-32 mx-auto my-6 md:w-36 md:h-1 border-DS-verdigris" data-aos="fade-up" data-aos-delay="300"></div>
@@ -97,7 +97,7 @@ const Kelas = () => {
 
       {selectedClass && (
         <div data-aos="zoom-in" className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-          <div className=" bg-DS-beige px-8 py-10 rounded-lg shadow-lg max-w-[250px] imd:max-w-2xl w-full relative">
+          <div className=" bg-DS-beige px-8 py-10 rounded-lg shadow-lg max-w-[350px] 2sm:max-w-[300px] imd:max-w-2xl w-full relative">
             <button
               onClick={handleClosePopup}
               type="button"

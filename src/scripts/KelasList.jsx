@@ -64,7 +64,7 @@ const KelasList = ({ region, onSelectClass }) => {
   return (
     <div className="grid gap-x-14 gap-y-8 grid-cols-1 i2xl:grid-cols-5 ixl:grid-cols-4 ilg:grid-cols-3 ism:grid-cols-2 px-16 pb-16 pt-9 md:pt-6 sm:px-9 sm:py-9 sm:pt-4 items-center">
       {filteredClasses.length === 0 ? (
-        <p className="col-span-full text-center text-DS-beige dark:text-DS-charcoal">
+        <p className="col-span-full text-center text-DS-beige">
           Mohon maaf, saat ini belum ada kelas bahasa isyarat yang tersedia di region kamu.
         </p>
       ) : (
