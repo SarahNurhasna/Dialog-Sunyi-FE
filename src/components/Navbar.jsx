@@ -8,8 +8,28 @@ const Navbar = () => {
     localStorage.getItem("color-theme") === "dark" ||
     (!("color-theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
   );
+  const [visitCounts, setVisitCounts] = useState({});
   const navigate = useNavigate();
   const location = useLocation();
+
+  const pages = [
+    { name: "Beranda", path: "/" },
+    { name: "Kelas", path: "/kelas" },
+    { name: "Artikel", path: "/artikel" },
+    { name: "FAQ", path: "/faq" },
+    { name: "Tentang Kami", path: "/tentang-kami" }
+  ];
+
+  useEffect(() => {
+    // Initialize visit counts from localStorage
+    const storedCounts = JSON.parse(localStorage.getItem("visitCounts")) || {};
+    setVisitCounts(storedCounts);
+    // console.log("Initial visit counts:", storedCounts); // Log initial visit counts
+  }, []);
+
+  useEffect(() => {
+    // console.log("Updated visit counts:", visitCounts); // Log visit counts whenever it updates
+  }, [visitCounts]);
 
   useEffect(() => {
     const themeToggleDarkIcon = document.getElementById("theme-toggle-dark-icon");
@@ -37,14 +57,21 @@ const Navbar = () => {
     localStorage.setItem("color-theme", !isDarkMode ? "dark" : "light");
   };
 
-  const handleLinkClick = (link, path) => {
-    navigate(path);
+  const handleLinkClick = (page) => {
+    const newVisitCounts = { ...visitCounts, [page.path]: (visitCounts[page.path] || 0) + 1 };
+    setVisitCounts(newVisitCounts);
+    localStorage.setItem("visitCounts", JSON.stringify(newVisitCounts));
+    console.log("Visit counts after clicking:", newVisitCounts); // Log visit counts after clicking
+    navigate(page.path);
   };
 
   const getLinkClass = (path) => {
     const isActive = location.pathname === path;
     return `block py-2 px-3 transition duration-100 ease-in-out ${isActive ? "text-DS-verdigris border-b-2 border-DS-verdigris" : "text-DS-beige"} ${isActive ? "" : "hover:text-DS-orangecarrot"}`;
   };
+
+  // Sort pages based on visit counts
+  const sortedPages = [...pages].sort((a, b) => (visitCounts[b.path] || 0) - (visitCounts[a.path] || 0));
 
   return (
     <nav className="bg-DS-charcoal fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
@@ -81,31 +108,13 @@ const Navbar = () => {
         </div>
         <div className={`items-center justify-between w-full ilg:flex ${isOpen ? "ilg:w-auto" : "ilg:w-auto hidden"} ilg:order-1`} id="navbar-sticky">
           <ul className="flex flex-col p-4 ilg:p-0 mt-4 font-medium ilg:space-x-8 rtl:space-x-reverse ilg:flex-row ilg:mt-0 ilg:border-0">
-            <li>
-              <a href="/" className={getLinkClass("/")} onClick={() => handleLinkClick("beranda", "/")} aria-current={location.pathname === "/" ? "page" : undefined}>
-                Beranda
-              </a>
-            </li>
-            <li>
-              <a href="/kelas" className={getLinkClass("/kelas")} onClick={() => handleLinkClick("kelas", "/kelas")} aria-current={location.pathname === "/kelas" ? "page" : undefined}>
-                Kelas
-              </a>
-            </li>
-            <li>
-              <a href="/artikel" className={getLinkClass("/artikel")} onClick={() => handleLinkClick("artikel", "/artikel")} aria-current={location.pathname === "/artikel" ? "page" : undefined}>
-                Artikel
-              </a>
-            </li>
-            <li>
-              <a href="/faq" className={getLinkClass("/faq")} onClick={() => handleLinkClick("faq", "/faq")} aria-current={location.pathname === "/faq" ? "page" : undefined}>
-                FAQ
-              </a>
-            </li>
-            <li>
-              <a href="/tentang-kami" className={getLinkClass("/tentang-kami")} onClick={() => handleLinkClick("tentang", "/tentang-kami")} aria-current={location.pathname === "/tentang-kami" ? "page" : undefined}>
-                Tentang Kami
-              </a>
-            </li>
+            {sortedPages.map((page) => (
+              <li key={page.path}>
+                <a href={page.path} className={getLinkClass(page.path)} onClick={() => handleLinkClick(page)} aria-current={location.pathname === page.path ? "page" : undefined}>
+                  {page.name}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
